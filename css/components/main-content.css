@@ -1,0 +1,82 @@
+.main-content {
+  width: 100%;
+  border: 1px solid var(--gray-100);
+  padding: 23px;
+  overflow: auto;
+}
+
+.form-container {
+  background-color: white;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0px auto;
+  padding: 20px;
+  margin-bottom: 59px;
+}
+
+.color-palette-container {
+  width: 36px;
+  height: 36px;
+  padding: 9px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 100px;
+  position: relative;
+}
+
+.colors__container-custom-form {
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 5px;
+  gap: 5px;
+  display: none;
+  grid-template-columns: repeat(5, 1fr);
+  position: absolute;
+  top: 40px;
+  left: 5px;
+}
+
+.colors__container-custom {
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 5px;
+  gap: 5px;
+  display: none;
+  grid-template-columns: repeat(5, 1fr);
+  position: absolute;
+  bottom: 42px;
+  left: 0px;
+}
+
+.colors__container-custom-open {
+  display: grid;
+}
+
+.color-custom {
+  width: 25px;
+  height: 25px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.color-custom-note {
+  width: 25px;
+  height: 25px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.color-custom:focus-within {
+  outline: solid;
+  outline-color: #999b9e;
+  background-color: red;
+}
+
+.empty-container {
+  text-align: center;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}

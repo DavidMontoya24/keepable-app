@@ -1,0 +1,21 @@
+.header {
+  height: 70px;
+  border: 1px solid var(--gray-100);
+  width: 100%;
+}
+
+.header__container {
+  display: flex;
+  gap: 117px;
+  padding: 23px 0 23px 30px;
+}
+
+.header__logo {
+  font-weight: 700;
+  font-size: 29px;
+  line-height: 24px;
+}
+
+.header__logo span {
+  color: var(--gray-200);
+}

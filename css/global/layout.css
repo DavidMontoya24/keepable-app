@@ -1,0 +1,75 @@
+.container {
+  background-color: var(--gray-300);
+  color: #ffffff;
+  height: 100vh;
+}
+body {
+  background-color: var(--gray-300);
+}
+
+section {
+  height: calc(100vh - 70px);
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.card__title::placeholder {
+  color: var(--gray-placeholder-1);
+}
+
+.card__content::placeholder {
+  color: var(--gray-placeholder-2);
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.aside__notes:hover,
+.aside__trash:hover {
+  background-color: var(--gray-200);
+  border-radius: 0px 25px 25px 0px;
+}
+
+.aside__notes-icon {
+  width: 20px;
+  height: 16px;
+}
+
+.aside__active-menu {
+  background-color: var(--gray-200);
+  border-radius: 0px 25px 25px 0px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.actions-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* .aside__notes:active,
+.aside__trash:active {
+  background-color: var(--gray-transparent);
+  border-radius: 0px 25px 25px 0px;
+} */

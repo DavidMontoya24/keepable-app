@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keepable</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Happy coding -->
+    <div class="container">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__logo">{keep<span>able}</span></div>
+          <p>Welcome to {keepable}</p>
+        </div>
+      </header>
+      <section class="flex">
+        <aside class="aside">
+          <a href="index.html">
+            <div
+              id="notes_ctgry"
+              class="aside__notes flex gap-20 py-14 pl-20 align-center aside__active-menu"
+            >
+              <div class="aside__notes-icon">
+                <img src="./assets/icons/brackets-icon.png" alt="notes-icon" />
+              </div>
+              <p>Notes</p>
+            </div>
+          </a>
+          <a href="./trash.html">
+            <div
+              id="trash_ctgry"
+              class="aside__trash flex gap-20 py-14 pl-20 align-center"
+            >
+              <div class="aside__trash-icon">
+                <img src="./assets/icons/trash-icon.png" alt="trash-icon" />
+              </div>
+              <p>Trash</p>
+            </div>
+          </a>
+        </aside>
+        <div class="main-content">
+          <form action="#" class="js-form-container">
+            <div class="form-container">
+              <div class="text-container">
+                <input
+                  type="text"
+                  id="title"
+                  name="title"
+                  placeholder="Title"
+                  class="card__title heading"
+                />
+                <input
+                  type="text"
+                  id="content"
+                  name="content"
+                  placeholder="Take a note..."
+                  class="card__content"
+                />
+              </div>
+              <div class="actions-container">
+                <div
+                  id="color-palette-container"
+                  class="color-palette-container"
+                >
+                  <div class="button">
+                    <img
+                      src="./assets/icons/color-pallete-icon.png"
+                      alt="color-pallete-icon"
+                    />
+                  </div>
+                  <div class="colors-container"></div>
+                </div>
+
+                <button type="submit" class="button bold">Keep it!</button>
+              </div>
+            </div>
+          </form>
+
+          <div class="notes-container"></div>
+          <div id="myModal" class="modal-list"></div>
+
+          <div class="empty-container">
+            <p class="content-lg">No notes to keep</p>
+          </div>
+          <div>
+            <p class="heading" id="pinned-title"></p>
+            <div id="pinned-container" class="notes-container"></div>
+          </div>
+          <div>
+            <p class="heading" id="others-title"></p>
+            <div id="others-container" class="notes-container"></div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+    <script src="store.js"></script>
+    <script src="palette.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
